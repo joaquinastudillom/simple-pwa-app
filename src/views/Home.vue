@@ -1,5 +1,10 @@
 <template>
   <q-page padding>
+
+    <div class="q-pa-md q-gutter-sm addButton">
+      <q-btn push color="primary" icon="add_circle_outline" @click="$router.push({name: 'post'})" />
+    </div>
+
     <div class="row">
       <div class="col-6" style="padding:5px" v-for="dog in dogs" :key="dog.id">
         <q-card class="my-card">
@@ -22,7 +27,9 @@
 </template>
 
 <style lang="stylus" scoped>
-.my-card {
+.addButton {
+    display: flex;
+    justify-content: flex-end;
 }
 </style>
 
@@ -47,41 +54,44 @@ export default {
     QItemLabel,
     QPage
   },
-  data(){
+  data() {
     return {
-      dogs:[
-                {
-                    'id': 0,
-                    'url': 'https://images.dog.ceo/breeds/germanshepherd/n02106662_13904.jpg',
-                    'comment': 'Dog resting',
-                    'info': 'Posted by Eder on Friday'
-                },
-                {
-                    'id': 1,
-                    'url': 'https://images.dog.ceo/breeds/setter-gordon/n02101006_4491.jpg',
-                    'comment': 'Tongue dog',
-                    'info': 'Posted by Naye on Tuesday'
-                },
-                {
-                    'id': 2,
-                    'url': 'https://images.dog.ceo/breeds/terrier-australian/n02096294_1429.jpg',
-                    'comment': 'Terrier Australian dog',
-                    'info': 'Posted by Eder on Monday'
-                },
-                {
-                    'id': 3,
-                    'url': 'https://images.dog.ceo/breeds/mexicanhairless/n02113978_1595.jpg',
-                    'comment': 'Mexico Xoloitzcuintle',
-                    'info': 'Posted by Naye on Monday'
-                },
-                {
-                    'id': 4,
-                    'url': 'https://images.dog.ceo/breeds/dachshund/dog-495133_640.jpg',
-                    'comment': 'Sad dog',
-                    'info': 'Posted by Eder on Monday'
-                }
-            ]
-    }
+      dogs: [
+        {
+          id: 0,
+          url:
+            "https://images.dog.ceo/breeds/germanshepherd/n02106662_13904.jpg",
+          comment: "Dog resting",
+          info: "Posted by Eder on Friday"
+        },
+        {
+          id: 1,
+          url: "https://images.dog.ceo/breeds/setter-gordon/n02101006_4491.jpg",
+          comment: "Tongue dog",
+          info: "Posted by Naye on Tuesday"
+        },
+        {
+          id: 2,
+          url:
+            "https://images.dog.ceo/breeds/terrier-australian/n02096294_1429.jpg",
+          comment: "Terrier Australian dog",
+          info: "Posted by Eder on Monday"
+        },
+        {
+          id: 3,
+          url:
+            "https://images.dog.ceo/breeds/mexicanhairless/n02113978_1595.jpg",
+          comment: "Mexico Xoloitzcuintle",
+          info: "Posted by Naye on Monday"
+        },
+        {
+          id: 4,
+          url: "https://images.dog.ceo/breeds/dachshund/dog-495133_640.jpg",
+          comment: "Sad dog",
+          info: "Posted by Eder on Monday"
+        }
+      ]
+    };
   }
 };
 </script>
