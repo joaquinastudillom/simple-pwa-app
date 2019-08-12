@@ -12,12 +12,10 @@ const config = {
     appId: "1:519093170196:web:ff70fef7a04b304f" 
 };
 
-firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(config);
 
 let db = firebase.firestore();
 
-db.settings({
-    timestampsInSnapshots: true
-});
+db.enablePersistence({synchronizeTabs:true});
 
 export default db;
