@@ -20,5 +20,6 @@ let db = firebase.firestore();
 db.enablePersistence({synchronizeTabs:true});
 
 const storage = firebase.storage();
+const messaging = firebase.messaging();
 
-export default {db,storage};
+export default {db,storage, messaging};

@@ -53,12 +53,73 @@
 </template>
 
 <script>
+import firebase from "../config/firebase";
+import axios from "axios";
+
+const { messaging } = firebase;
+
 export default {
   name: 'LayoutDefault',
-
   data () {
     return {
       leftDrawerOpen: this.$q.platform.is.desktop
+    }
+  },
+  mounted(){
+    this.listenTokenRefresh();
+  },
+  methods: {
+    getMessagingToken(){
+      messaging.getToken().then(async (token) => {
+        if(token){
+          const currentMessageToken = window.localStorage.getItem("messagingToken");
+          console.log("token will be updated", currentMessageToken != token);
+
+          if(currentMessageToken != token){
+            await this.saveToken(token);
+          }
+        }else{
+          console.log("No instance ID token available. Request permission to generate one");
+          this.notificationsPermissionRequest();
+        }
+      })
+      .catch((err) => {
+        console.log("Unable to get permission while retrieving token. ", err);
+      });
+    },
+    notificationsPermissionRequest(){
+      messaging.requestPermission()
+      .then(() => {
+        this.getMessagingToken();
+      })
+      .catch((err) => {
+        console.log("Unable to get permission to notify. " ,err);
+      });
+    },
+    listenTokenRefresh(){
+      const currentMessageToken = window.localStorage.getItem("messagingToken");
+      console.log("currentMessageToken", currentMessageToken);
+      if(!!currentMessageToken){
+        messaging.onTokenRefresh(() => {
+          messaging.getToken().then(token => {
+            this.saveToken(token);
+          })
+          .catch(err => {
+            console.log("Unable to retrieve refresh token ", err);
+          });
+        });
+      }
+    },
+    saveToken(){
+      console.log("tokens", token);
+      axios.post(`https://us-central1-cropchien.cloudfunctions.net/GeneralSubscription`, {token})
+      .then(response => {
+        window.localStorage.setItem("messagingToken", token);
+        console.log(response);
+      })
+      .catch(err => {
+        console.log(err);
+      });
     }
   }
 }
