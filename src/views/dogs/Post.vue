@@ -59,6 +59,12 @@ export default {
     QImg,
     QChip
   },
+  props: {
+    pictureUrl: {
+      default: '',
+      type: String
+    }
+  },
   data() {
     return {
       dogUrl: null,
@@ -67,7 +73,10 @@ export default {
     };
   },
   mounted() {
-    updateDogPicture("https://dog.ceo/api/breed/appenzeller/images/random")
+    if(this.pictureUrl !== ""){
+        this.dogUrl = this.pictureUrl;
+    }else{
+      updateDogPicture("https://dog.ceo/api/breed/appenzeller/images/random")
       .then(data => {
         if (data.status) {
           this.dogUrl = data.message;
@@ -76,6 +85,7 @@ export default {
       .catch(err => {
         this.dogUrl = null;
       });
+    }
   },
   methods: {
     post() {

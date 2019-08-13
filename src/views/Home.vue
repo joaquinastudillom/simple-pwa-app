@@ -4,12 +4,12 @@
     <Camera />
 
     <div class="q-pa-md q-gutter-sm addButton">
-      <q-btn push color="primary" icon="camera" @click="$store.dispatch('setCamereModalValue')"  />
+      <q-btn push color="primary" icon="camera_alt" @click="$store.dispatch('setCamereModalValue')"  />
       <q-btn push color="primary" icon="add_circle_outline" @click="$router.push({name: 'post'})" />
     </div>
 
     <div class="row">
-      <div class="col-6" style="padding:5px" v-for="(dog, index) in dogs" :key="dog.id" @click="$router.push({name: 'details', params:{ id:dog.id, dogProp:dogs[index] }})">
+      <div class="" style="padding:5px" v-for="(dog, index) in dogs" :key="dog.id" @click="$router.push({name: 'details', params:{ id:dog.id, dogProp:dogs[index] }})">
         <q-card class="my-card">
           <q-item>
             <q-item-section avatar>
@@ -72,7 +72,7 @@ export default {
     }
   },
   mounted(){
-    let dogsRef = firebase.collection("dogs").orderBy("created_at");
+    let dogsRef = firebase.db.collection("dogs").orderBy("created_at", "asc");
     dogsRef.get().then(snapshot => {
       snapshot.forEach(dog => {
         this.dogs.push({
