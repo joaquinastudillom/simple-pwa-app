@@ -1,6 +1,7 @@
-import firebase from "firebase";
+import firebase from "firebase/app";
 import "firebase/firestore";
 import "firebase/messaging";
+import "firebase/storage";
 
 const config = {
     apiKey: "AIzaSyC-x_P9Jb3VSJpMSx-E6j4dBu4DzkW8tus",
@@ -18,4 +19,6 @@ let db = firebase.firestore();
 
 db.enablePersistence({synchronizeTabs:true});
 
-export default db;
+const storage = firebase.storage();
+
+export default {db,storage};

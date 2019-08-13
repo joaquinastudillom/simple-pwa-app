@@ -12,7 +12,7 @@
         />
 
         <q-toolbar-title>
-          Simple PWA App
+          Doggy PWA
         </q-toolbar-title>
 
         <div>Quasar v{{ $q.version }}</div>

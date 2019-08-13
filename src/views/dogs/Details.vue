@@ -25,6 +25,7 @@
         </q-item>
       </q-list>
     </q-card>
+    <q-btn color="teal" class="full-width q-mt-md" icon="keyboard_backspace" @click="$router.push({name: 'home'})" />
   </q-page>
 </template>
 
@@ -56,7 +57,7 @@ export default {
       this.dog = this.dogProp;
     } else {
       const id = this.$route.params.id;
-      firebase
+      firebase.db
         .doc(`dogs/${id}`)
         .get()
         .then(doc => {
