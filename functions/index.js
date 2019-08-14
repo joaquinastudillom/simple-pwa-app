@@ -38,3 +38,28 @@ exports.GeneralSubscription = functions.https.onRequest((request, response) => {
     }); 
 });
 
+exports.createDog = functions.firestore.document("dogs/{dogId}").onCreate(event => {
+    let dog = event.data();
+    console.log(dog.comment);
+    axios.post(`https://fcm.googleapis.com/fcm/send`, {
+        "to" : "/topics/general",
+        "priority" : "high",
+        "notification" : {
+            "title" : "Nueva Post created",
+            "body" : dog.comment,
+            "click_action":"https://joaquinastudillo.github.io/simple-pwa-app",
+            "icon":"https://joaquinastudillo.github.io/simple-pwa-app/chrome/chrome-installprocess-128-128.png",
+        }
+    },{
+        headers: {
+            "Content-Type": "application/json",
+            "Authorization": `key=${serverKey}`
+        }
+    }).then(response => {
+        console.log(response);
+        console.log(response.data);
+    }).catch(err => {
+        console.log(err.response);
+    });
+});
+

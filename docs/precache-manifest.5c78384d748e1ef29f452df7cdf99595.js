@@ -8,16 +8,16 @@ self.__precacheManifest = [
     "url": "/ios/ios-launchimage-2048-1536.png"
   },
   {
-    "revision": "689e4cb413f33b4556daffb5b6678d5c",
-    "url": "/ios/ios-launchimage-2208-1242.png"
+    "revision": "7c16bf09e78c74b8ceea9bb26a240010",
+    "url": "/windows10/Square310x310Logo.scale-400.png"
   },
   {
     "revision": "009348eda6840be19f44",
     "url": "/js/chunk-vendors.df8fbbf8.js"
   },
   {
-    "revision": "7c16bf09e78c74b8ceea9bb26a240010",
-    "url": "/windows10/Square310x310Logo.scale-400.png"
+    "revision": "689e4cb413f33b4556daffb5b6678d5c",
+    "url": "/ios/ios-launchimage-2208-1242.png"
   },
   {
     "revision": "0ff7b8ca037a211c9d06e77aee9d0ab9",
@@ -32,14 +32,6 @@ self.__precacheManifest = [
     "url": "/ios/ios-launchimage-750-1334.png"
   },
   {
-    "revision": "410795bd474022c17022961a01be96ac",
-    "url": "/ios/ios-launchimage-640-960.png"
-  },
-  {
-    "revision": "e78ff64c4ed98bd7a1b036a80f607c1d",
-    "url": "/ios/ios-launchimage-640-1136.png"
-  },
-  {
     "revision": "9723a60f2aa6ea516196717c3d4d97b3",
     "url": "/windows10/Wide310x150Logo.scale-400.png"
   },
@@ -48,12 +40,20 @@ self.__precacheManifest = [
     "url": "/windows10/Square310x310Logo.scale-200.png"
   },
   {
-    "revision": "9723a60f2aa6ea516196717c3d4d97b3",
-    "url": "/windows10/SplashScreen.scale-200.png"
+    "revision": "410795bd474022c17022961a01be96ac",
+    "url": "/ios/ios-launchimage-640-960.png"
+  },
+  {
+    "revision": "e78ff64c4ed98bd7a1b036a80f607c1d",
+    "url": "/ios/ios-launchimage-640-1136.png"
   },
   {
     "revision": "876c87813f2421ebb21a9c4489463c45",
     "url": "/windows10/Square150x150Logo.scale-400.png"
+  },
+  {
+    "revision": "9723a60f2aa6ea516196717c3d4d97b3",
+    "url": "/windows10/SplashScreen.scale-200.png"
   },
   {
     "revision": "e7c4006b30ede26b84746f8f2a66e071",
@@ -104,6 +104,10 @@ self.__precacheManifest = [
     "url": "/windows10/Square44x44Logo.scale-100.png"
   },
   {
+    "revision": "0be2e657c1bf4983d805ff772326a425",
+    "url": "/windows10/Square44x44Logo.scale-125.png"
+  },
+  {
     "revision": "015456ebae2b2dd0030ec42c14191484",
     "url": "/windows10/Square44x44Logo.scale-150.png"
   },
@@ -128,10 +132,6 @@ self.__precacheManifest = [
     "url": "/windows10/Square44x44Logo.targetsize-24_altform-unplated.png"
   },
   {
-    "revision": "0be2e657c1bf4983d805ff772326a425",
-    "url": "/windows10/Square44x44Logo.scale-125.png"
-  },
-  {
     "revision": "02c4ca1b1995b265e77566a6c4dc0a36",
     "url": "/windows10/Square44x44Logo.targetsize-48_altform-unplated.png"
   },
@@ -153,23 +153,23 @@ self.__precacheManifest = [
   },
   {
     "revision": "a21fa0d7c1d8d1f44ccd6360dbc04050",
-    "url": "/windows10/StoreLogo.png"
+    "url": "/windows10/StoreLogo.scale-100.png"
   },
   {
     "revision": "a21fa0d7c1d8d1f44ccd6360dbc04050",
-    "url": "/windows10/StoreLogo.scale-100.png"
+    "url": "/windows10/StoreLogo.png"
   },
   {
     "revision": "7681c46dece248cdf82cef3fa782b737",
     "url": "/windows10/StoreLogo.scale-125.png"
   },
   {
-    "revision": "ee1fd59ef8cd1f2986d57ba9d3afe322",
-    "url": "/windows10/StoreLogo.scale-200.png"
-  },
-  {
     "revision": "c24bc01cd030965d565c86743a1dcee0",
     "url": "/windows10/StoreLogo.scale-150.png"
+  },
+  {
+    "revision": "ee1fd59ef8cd1f2986d57ba9d3afe322",
+    "url": "/windows10/StoreLogo.scale-200.png"
   },
   {
     "revision": "ee9916b2b3a2f95e972d16e12abc339e",
@@ -217,7 +217,7 @@ self.__precacheManifest = [
   },
   {
     "revision": "7a57208ff57e0d9c8c6ee726a5461c89",
-    "url": "/firefox/firefox-marketplace-512-512.png"
+    "url": "/android/android-launchericon-512-512.png"
   },
   {
     "revision": "ca8c4b5e24c9a77b4de9",
@@ -228,8 +228,8 @@ self.__precacheManifest = [
     "url": "/ios/ios-appicon-180-180.png"
   },
   {
-    "revision": "5379e13a7d49f23959e3a157762f4faa",
-    "url": "/ios/ios-appicon-120-120.png"
+    "revision": "faabf218ddf61211304eb3747d2f6691",
+    "url": "/ios/ios-appicon-152-152.png"
   },
   {
     "revision": "74d332d12f89e7ae1364c5d8b8c4f598",
@@ -256,24 +256,24 @@ self.__precacheManifest = [
     "url": "/firefox/firefox-general-90-90.png"
   },
   {
-    "revision": "612123c5ebd7d63e13eb3da4bef66eea",
-    "url": "/firefox/firefox-general-64-64.png"
-  },
-  {
     "revision": "02c4ca1b1995b265e77566a6c4dc0a36",
     "url": "/firefox/firefox-general-48-48.png"
+  },
+  {
+    "revision": "612123c5ebd7d63e13eb3da4bef66eea",
+    "url": "/firefox/firefox-general-64-64.png"
   },
   {
     "revision": "931c81ef1e5636e6d7f8d46f67632ba6",
     "url": "/firefox/firefox-general-32-32.png"
   },
   {
-    "revision": "5cb7edfceb233100075dc9a1e12e8da3",
-    "url": "/fonts/KFOkCnqEu92Fr1MmgVxIIzQ.5cb7edfc.woff"
-  },
-  {
     "revision": "cfe682e983fb2d49964e2cda5efa9188",
     "url": "/firefox/firefox-general-16-16.png"
+  },
+  {
+    "revision": "5cb7edfceb233100075dc9a1e12e8da3",
+    "url": "/fonts/KFOkCnqEu92Fr1MmgVxIIzQ.5cb7edfc.woff"
   },
   {
     "revision": "b00849e00f4c2331cddd8ffb44a6720b",
@@ -288,12 +288,12 @@ self.__precacheManifest = [
     "url": "/ios/ios-appicon-1024-1024.png"
   },
   {
-    "revision": "faabf218ddf61211304eb3747d2f6691",
-    "url": "/ios/ios-appicon-152-152.png"
+    "revision": "5379e13a7d49f23959e3a157762f4faa",
+    "url": "/ios/ios-appicon-120-120.png"
   },
   {
-    "revision": "60fa3c0614b8fb2f394fa29944c21540",
-    "url": "/fonts/KFOmCnqEu92Fr1Mu4mxM.60fa3c06.woff"
+    "revision": "7a57208ff57e0d9c8c6ee726a5461c89",
+    "url": "/firefox/firefox-marketplace-512-512.png"
   },
   {
     "revision": "87284894879f5b1c229cb49c8ff6decc",
@@ -316,12 +316,16 @@ self.__precacheManifest = [
     "url": "/fonts/KFOlCnqEu92Fr1MmYUtfBBc-.bb1e4dc6.woff"
   },
   {
-    "revision": "adcde98f1d584de52060ad7b16373da3",
-    "url": "/fonts/KFOlCnqEu92Fr1MmWUlfBBc-.adcde98f.woff"
+    "revision": "60fa3c0614b8fb2f394fa29944c21540",
+    "url": "/fonts/KFOmCnqEu92Fr1Mu4mxM.60fa3c06.woff"
   },
   {
     "revision": "1f465631a19609aa04f8752aac427af0",
     "url": "/ios/ios-launchimage-1024-768.png"
+  },
+  {
+    "revision": "adcde98f1d584de52060ad7b16373da3",
+    "url": "/fonts/KFOlCnqEu92Fr1MmWUlfBBc-.adcde98f.woff"
   },
   {
     "revision": "3ee8807df5557fac6c16cb2379958d79",
@@ -346,10 +350,6 @@ self.__precacheManifest = [
   {
     "revision": "77fd00c6da173cd7dd2b374b794c212f",
     "url": "/android/android-launchericon-72-72.png"
-  },
-  {
-    "revision": "7a57208ff57e0d9c8c6ee726a5461c89",
-    "url": "/android/android-launchericon-512-512.png"
   },
   {
     "revision": "02c4ca1b1995b265e77566a6c4dc0a36",
