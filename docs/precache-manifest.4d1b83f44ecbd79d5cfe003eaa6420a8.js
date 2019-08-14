@@ -12,16 +12,16 @@ self.__precacheManifest = [
     "url": "/ios/ios-launchimage-2208-1242.png"
   },
   {
-    "revision": "6ea1ac7dc604df97b69d",
-    "url": "/js/chunk-vendors.7f201147.js"
-  },
-  {
-    "revision": "0ff7b8ca037a211c9d06e77aee9d0ab9",
-    "url": "/windows10/SplashScreen.scale-400.png"
+    "revision": "009348eda6840be19f44",
+    "url": "/js/chunk-vendors.df8fbbf8.js"
   },
   {
     "revision": "7c16bf09e78c74b8ceea9bb26a240010",
     "url": "/windows10/Square310x310Logo.scale-400.png"
+  },
+  {
+    "revision": "0ff7b8ca037a211c9d06e77aee9d0ab9",
+    "url": "/windows10/SplashScreen.scale-400.png"
   },
   {
     "revision": "19e5ab4c9ee527a09a9542ebc1b47775",
@@ -32,20 +32,20 @@ self.__precacheManifest = [
     "url": "/ios/ios-launchimage-750-1334.png"
   },
   {
-    "revision": "9723a60f2aa6ea516196717c3d4d97b3",
-    "url": "/windows10/Wide310x150Logo.scale-400.png"
-  },
-  {
-    "revision": "54594528a4946758af440468ea107df6",
-    "url": "/windows10/Square310x310Logo.scale-200.png"
-  },
-  {
     "revision": "410795bd474022c17022961a01be96ac",
     "url": "/ios/ios-launchimage-640-960.png"
   },
   {
     "revision": "e78ff64c4ed98bd7a1b036a80f607c1d",
     "url": "/ios/ios-launchimage-640-1136.png"
+  },
+  {
+    "revision": "9723a60f2aa6ea516196717c3d4d97b3",
+    "url": "/windows10/Wide310x150Logo.scale-400.png"
+  },
+  {
+    "revision": "54594528a4946758af440468ea107df6",
+    "url": "/windows10/Square310x310Logo.scale-200.png"
   },
   {
     "revision": "9723a60f2aa6ea516196717c3d4d97b3",
@@ -104,10 +104,6 @@ self.__precacheManifest = [
     "url": "/windows10/Square44x44Logo.scale-100.png"
   },
   {
-    "revision": "0be2e657c1bf4983d805ff772326a425",
-    "url": "/windows10/Square44x44Logo.scale-125.png"
-  },
-  {
     "revision": "015456ebae2b2dd0030ec42c14191484",
     "url": "/windows10/Square44x44Logo.scale-150.png"
   },
@@ -117,19 +113,23 @@ self.__precacheManifest = [
   },
   {
     "revision": "cfe682e983fb2d49964e2cda5efa9188",
-    "url": "/windows10/Square44x44Logo.targetsize-16_altform-unplated.png"
+    "url": "/windows10/Square44x44Logo.targetsize-16.png"
   },
   {
     "revision": "cfe682e983fb2d49964e2cda5efa9188",
-    "url": "/windows10/Square44x44Logo.targetsize-16.png"
+    "url": "/windows10/Square44x44Logo.targetsize-16_altform-unplated.png"
+  },
+  {
+    "revision": "b884bbca76a047c1909a3f7aa4d06cd2",
+    "url": "/windows10/Square44x44Logo.targetsize-24.png"
   },
   {
     "revision": "b884bbca76a047c1909a3f7aa4d06cd2",
     "url": "/windows10/Square44x44Logo.targetsize-24_altform-unplated.png"
   },
   {
-    "revision": "b884bbca76a047c1909a3f7aa4d06cd2",
-    "url": "/windows10/Square44x44Logo.targetsize-24.png"
+    "revision": "0be2e657c1bf4983d805ff772326a425",
+    "url": "/windows10/Square44x44Logo.scale-125.png"
   },
   {
     "revision": "02c4ca1b1995b265e77566a6c4dc0a36",
@@ -140,12 +140,12 @@ self.__precacheManifest = [
     "url": "/windows10/Square44x44Logo.targetsize-48.png"
   },
   {
-    "revision": "95e7d10ab2058479e79fb7daaa4d277d",
-    "url": "/windows10/Square71x71Logo.scale-125.png"
-  },
-  {
     "revision": "01b7d9acac62654a818b94c29116a0dc",
     "url": "/windows10/Square71x71Logo.scale-100.png"
+  },
+  {
+    "revision": "95e7d10ab2058479e79fb7daaa4d277d",
+    "url": "/windows10/Square71x71Logo.scale-125.png"
   },
   {
     "revision": "145cd11b389b2321aa8310d47ac46d19",
@@ -153,23 +153,23 @@ self.__precacheManifest = [
   },
   {
     "revision": "a21fa0d7c1d8d1f44ccd6360dbc04050",
-    "url": "/windows10/StoreLogo.scale-100.png"
+    "url": "/windows10/StoreLogo.png"
   },
   {
     "revision": "a21fa0d7c1d8d1f44ccd6360dbc04050",
-    "url": "/windows10/StoreLogo.png"
+    "url": "/windows10/StoreLogo.scale-100.png"
   },
   {
     "revision": "7681c46dece248cdf82cef3fa782b737",
     "url": "/windows10/StoreLogo.scale-125.png"
   },
   {
-    "revision": "c24bc01cd030965d565c86743a1dcee0",
-    "url": "/windows10/StoreLogo.scale-150.png"
-  },
-  {
     "revision": "ee1fd59ef8cd1f2986d57ba9d3afe322",
     "url": "/windows10/StoreLogo.scale-200.png"
+  },
+  {
+    "revision": "c24bc01cd030965d565c86743a1dcee0",
+    "url": "/windows10/StoreLogo.scale-150.png"
   },
   {
     "revision": "ee9916b2b3a2f95e972d16e12abc339e",
@@ -180,8 +180,8 @@ self.__precacheManifest = [
     "url": "/windows10/Square44x44Logo.targetsize-256_altform-unplated.png"
   },
   {
-    "revision": "c2f475b96d46a34c7598",
-    "url": "/js/app.75c12ce6.js"
+    "revision": "ca8c4b5e24c9a77b4de9",
+    "url": "/js/app.e522b122.js"
   },
   {
     "revision": "d14cfb2f2807af6ddb3d0de929fedccc",
@@ -220,12 +220,12 @@ self.__precacheManifest = [
     "url": "/firefox/firefox-marketplace-512-512.png"
   },
   {
-    "revision": "c2f475b96d46a34c7598",
-    "url": "/css/app.3e205390.css"
+    "revision": "ca8c4b5e24c9a77b4de9",
+    "url": "/css/app.1dedf955.css"
   },
   {
-    "revision": "faabf218ddf61211304eb3747d2f6691",
-    "url": "/ios/ios-appicon-152-152.png"
+    "revision": "4a8f2935362c88a720a88bd71c192ac5",
+    "url": "/ios/ios-appicon-180-180.png"
   },
   {
     "revision": "5379e13a7d49f23959e3a157762f4faa",
@@ -244,8 +244,8 @@ self.__precacheManifest = [
     "url": "/ios/ios-launchimage-1536-2048.png"
   },
   {
-    "revision": "6ea1ac7dc604df97b69d",
-    "url": "/css/chunk-vendors.8dc09a87.css"
+    "revision": "009348eda6840be19f44",
+    "url": "/css/chunk-vendors.6be61c36.css"
   },
   {
     "revision": "38bc569f26aa14e6e3de41e845662fd0",
@@ -256,24 +256,24 @@ self.__precacheManifest = [
     "url": "/firefox/firefox-general-90-90.png"
   },
   {
-    "revision": "02c4ca1b1995b265e77566a6c4dc0a36",
-    "url": "/firefox/firefox-general-48-48.png"
-  },
-  {
     "revision": "612123c5ebd7d63e13eb3da4bef66eea",
     "url": "/firefox/firefox-general-64-64.png"
+  },
+  {
+    "revision": "02c4ca1b1995b265e77566a6c4dc0a36",
+    "url": "/firefox/firefox-general-48-48.png"
   },
   {
     "revision": "931c81ef1e5636e6d7f8d46f67632ba6",
     "url": "/firefox/firefox-general-32-32.png"
   },
   {
-    "revision": "cfe682e983fb2d49964e2cda5efa9188",
-    "url": "/firefox/firefox-general-16-16.png"
-  },
-  {
     "revision": "5cb7edfceb233100075dc9a1e12e8da3",
     "url": "/fonts/KFOkCnqEu92Fr1MmgVxIIzQ.5cb7edfc.woff"
+  },
+  {
+    "revision": "cfe682e983fb2d49964e2cda5efa9188",
+    "url": "/firefox/firefox-general-16-16.png"
   },
   {
     "revision": "b00849e00f4c2331cddd8ffb44a6720b",
@@ -288,19 +288,19 @@ self.__precacheManifest = [
     "url": "/ios/ios-appicon-1024-1024.png"
   },
   {
-    "revision": "4a8f2935362c88a720a88bd71c192ac5",
-    "url": "/ios/ios-appicon-180-180.png"
+    "revision": "faabf218ddf61211304eb3747d2f6691",
+    "url": "/ios/ios-appicon-152-152.png"
   },
   {
     "revision": "60fa3c0614b8fb2f394fa29944c21540",
     "url": "/fonts/KFOmCnqEu92Fr1Mu4mxM.60fa3c06.woff"
   },
   {
-    "revision": "3ee8807df5557fac6c16cb2379958d79",
-    "url": "/ios/ios-launchimage-1334-750.png"
+    "revision": "87284894879f5b1c229cb49c8ff6decc",
+    "url": "/fonts/KFOlCnqEu92Fr1MmEU9fBBc-.87284894.woff"
   },
   {
-    "revision": "7f181ae6af4516dfa5d4ab4481eb2582",
+    "revision": "6c2572f376f44702d35897dfd8abd9c3",
     "url": "/index.html"
   },
   {
@@ -320,12 +320,12 @@ self.__precacheManifest = [
     "url": "/fonts/KFOlCnqEu92Fr1MmWUlfBBc-.adcde98f.woff"
   },
   {
-    "revision": "87284894879f5b1c229cb49c8ff6decc",
-    "url": "/fonts/KFOlCnqEu92Fr1MmEU9fBBc-.87284894.woff"
-  },
-  {
     "revision": "1f465631a19609aa04f8752aac427af0",
     "url": "/ios/ios-launchimage-1024-768.png"
+  },
+  {
+    "revision": "3ee8807df5557fac6c16cb2379958d79",
+    "url": "/ios/ios-launchimage-1334-750.png"
   },
   {
     "revision": "74d332d12f89e7ae1364c5d8b8c4f598",
