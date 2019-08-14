@@ -59,7 +59,7 @@ export default {
     };
   },
   mounted() {
-    if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+    /*if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
       navigator.mediaDevices
         .getUserMedia({ video: true })
         .then(mediaStream => {
@@ -102,7 +102,7 @@ export default {
         },
         errBack
       );
-    }
+    }*/
   },
   computed: {
     display: {
@@ -113,6 +113,7 @@ export default {
     }
   },
   methods: {
+    /*
     capture() {
       const vm = this;
       const mediaStreamTrack = this.mediaStream.getVideoTracks()[0];
@@ -136,11 +137,11 @@ export default {
             this.$router.go(-1);
           });
       });
-    }
+    }*/
   },
   destroyed() {
-    const tracks = this.mediaStream.getTracks();
-    tracks.map(track => track.stop());
+    //const tracks = this.mediaStream.getTracks();
+    //tracks.map(track => track.stop());
   }
 };
 </script>
