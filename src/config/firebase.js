@@ -10,16 +10,16 @@ const config = {
     projectId: "simple-pwa-app",
     storageBucket: "simple-pwa-app.appspot.com",
     messagingSenderId: "519093170196",
-    appId: "1:519093170196:web:ff70fef7a04b304f" 
+    appId: "1:519093170196:web:ff70fef7a04b304f"
 };
 
 firebase.initializeApp(config);
 
 let db = firebase.firestore();
 
-db.enablePersistence({synchronizeTabs:true});
+db.enablePersistence({ synchronizeTabs: true });
 
 const storage = firebase.storage();
 const messaging = firebase.messaging();
 
-export default {db,storage, messaging};
+export default { db, storage, messaging };

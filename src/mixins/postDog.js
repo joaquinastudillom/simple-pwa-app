@@ -6,7 +6,7 @@ export default (url, comment, author) => {
     let days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
     console.log(firebase.db);
 
-    firebase.collection("dogs").add({
+    firebase.db.collection("dogs").add({
         url,
         comment,
         info: `Posted by ${author != '' ? author : 'Unknown' } on ${days[currentDate.getDay()]}`,

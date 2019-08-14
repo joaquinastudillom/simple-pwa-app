@@ -8,9 +8,10 @@ module.exports = {
     /[\\\/]node_modules[\\\/]quasar[\\\/]/
   ],
   pwa: {
-    workboxPluginMode: "InjectManifest",
+    // configure the workbox plugin
+    workboxPluginMode: 'InjectManifest',
     workboxOptions: {
-      swSrc: "src/config/firebase-messaging-sw.js"
+      swSrc: "src/firebase-messaging-sw.js"
     }
   }
 }
